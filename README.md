@@ -1,12 +1,9 @@
 **MEARN: Enhancing B-cell Epitope Prediction with ESM-Derived Protein Embeddings and an Attention–Residual Neural Network**
 
-B-cell epitopes play a central role in humoral immune responses and are critical targets for vaccine design and therapeutic antibody development. However, accurate B-cell epitope prediction remains highly challenging due to several factors: severe class imbalance in available datasets, high heterogeneity of epitope sequences, and the limited number of experimentally validated epitopes. These issues degrade data quality and coverage, causing conventional deep learning models to suffer from bias and poor generalization.
+B-cell epitopes are key targets in vaccine design and therapeutic antibody development, yet accurate prediction remains challenging due to severe class imbalance, high sequence heterogeneity, and limited experimentally validated data. These issues often lead to biased learning and poor generalization in conventional deep learning models.
 
-To address these challenges, we propose MEARN, a novel Attention–Residual Neural Network that leverages semantically rich protein embeddings derived from the ESM protein language model.
-The key innovation of MEARN lies in the integration of multi-head attention, which captures latent relationships across embedding dimensions, with residual MLP blocks and Layer Normalization to stabilize training and enhance representation learning under severe class imbalance. This architecture enables more discriminative and generalizable feature learning compared with traditional deep learning approaches.
+To address these challenges, we propose MEARN, an Attention–Residual Neural Network that leverages semantically rich protein embeddings from the ESM protein language model. MEARN integrates multi-head attention with residual MLP blocks and Layer Normalization to capture latent feature interactions, stabilize training, and enhance representation learning under imbalanced data conditions.
 
-Extensive experiments demonstrate that MEARN achieves strong overall performance on B-cell epitope prediction tasks (ACC = 0.9287, AUC = 0.8092, BAC = 0.7345, MCC = 0.4983, PR-AUC = 0.4948, sensitivity = 0.5082, specificity = 0.9623). These results confirm that combining ESM embeddings with an attention–residual architecture provides a robust, balanced, and reliable solution for B-cell epitope prediction, with strong potential for applications in next-generation vaccine design.
+Experimental results demonstrate that MEARN achieves strong and balanced performance in B-cell epitope prediction (ACC = 0.9287, AUC = 0.8092, BAC = 0.7345, MCC = 0.4983, PR-AUC = 0.4948), confirming the effectiveness of combining ESM embeddings with an attention–residual architecture.
 
-Beyond predictive performance, MEARN offers methodological insights into the effective integration of protein language model embeddings and attention mechanisms for biological sequence analysis. 
-
-The proposed framework is practical, extensible, and well-suited for future research in bioinformatics and computational immunology
+Overall, MEARN provides a robust and extensible framework for biological sequence analysis and offers valuable methodological insights for future research in bioinformatics and computational immunology
