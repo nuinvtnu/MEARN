@@ -32,7 +32,3 @@ The final trained model weights are provided in HDF5 (.h5) format, while the com
     Step 3. Perform cross-validation to assess model robustness (optional)
     Step 4. Retrain the model on the full training set and evaluate on the independent test set
   
-  Step 1. Extract ESM-2 embeddings from protein sequences (mean-pooled or residue-level).
-  Step 2. Train the MEARN model on the training set.
-  Step 3. Perform cross-validation to assess model robustness (optional).
-  Step 4. Retrain the model on the full training set and evaluate on the independent test set.   
